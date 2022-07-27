@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdenarComponent implements OnInit {
 
+  arg: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cambiarArg(): void {
+    !this.arg ? this.arg = true : this.arg = false;
   }
 
 }
